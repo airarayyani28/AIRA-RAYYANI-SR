@@ -3,59 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Latihan DOM</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" 
-  integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"></script>
+  <style>
+    .card {
+      height: 100%;
+    }
+    .card-img-top {
+      height: 350px;
+      object-fit: cover;
+    }
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand">Mini Ecommerce</a>
       <form class="form-inline" id="formItem">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search"  id="keyword" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchItem">Search</button>
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" id="keyword">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
       <button class="btn btn-primary" id="cart"><i class="fas fa-shopping-cart"></i>(0)</button>
     </nav>
 
-    <!-- Produk ditampilkan dalam grid -->
+    <!-- Produk -->
     <div class="row mt-3">
-      
-      <div class="col-md-4">
+
+      <!-- 1 -->
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="image/cardigan.jpg" class="card-img-top" height="300px" alt="Cardigan">
+          <img src="image/Jacket S.jpg" class="card-img-top" alt="Jaket">
           <div class="card-body">
-            <h5 class="card-title">Cardigan</h5>
-            <p class="card-text">Cardigan hangat dan stylish untuk tampilan santai.</p>
+            <h5 class="card-title">Jaket</h5>
+            <p class="card-text">Jaket hangat dan stylish.</p>
             <p class="card-text">Rp 150.000</p>
-            <a href="#" class="btn btn-primary">Tambahkan ke keranjang</a>
+            <a href="#" class="btn btn-primary mt-auto">Tambahkan ke keranjang</a>
           </div>
         </div>
       </div>
 
-      <div class="col-md-4">
+      <!-- 2 -->
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="image/kulot.jpg" class="card-img-top" height="350px" alt="Celana Kulot">
+          <img src="image/crop top.jpg" class="card-img-top" alt="crop top">
           <div class="card-body">
-            <h5 class="card-title">Celana Kulot</h5>
-            <p class="card-text">Celana kulot nyaman dipakai sehari-hari.</p>
+            <h5 class="card-title">crop top Jacket</h5>
+            <p class="card-text">stylish</p>
             <p class="card-text">Rp 120.000</p>
-            <a href="#" class="btn btn-primary">Tambahkan ke keranjang</a>
+            <a href="#" class="btn btn-primary mt-auto">Tambahkan ke keranjang</a>
           </div>
         </div>
       </div>
 
-      <div class="col-md-4">
+      <!-- 3 -->
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="image/T-Shirt.jpg" class="card-img-top" height="350px" alt="t-shirt">
+          <img src="image/T-Shirt.jpg" class="card-img-top" alt="T-shirt">
           <div class="card-body">
             <h5 class="card-title">T-shirt</h5>
-            <p class="card-text">T-shirt nyaman dipakai</p>
+            <p class="card-text">T-shirt nyaman dipakai.</p>
             <p class="card-text">Rp 75.000</p>
-            <a href="#" class="btn btn-primary">Tambahkan ke keranjang</a>
+            <a href="#" class="btn btn-primary mt-auto">Tambahkan ke keranjang</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image/BAJU ANAK.jpg" class="card-img-top" alt="Baju Anak">
+          <div class="card-body">
+            <h5 class="card-title">Baju Anak</h5>
+            <p class="card-text">Baju anak premium dengan bahan adem.</p>
+            <p class="card-text">Rp 100.000</p>
+            <a href="#" class="btn btn-primary mt-auto">Tambahkan ke keranjang</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image/jaket anak.jpg" class="card-img-top" alt="Jaket Anak">
+          <div class="card-body">
+            <h5 class="card-title">Jaket Anak</h5>
+            <p class="card-text">jaket lucu dengan motif beruang.</p>
+            <p class="card-text">Rp 130.000</p>
+            <a href="#" class="btn btn-primary mt-auto">Tambahkan ke keranjang</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image/sepatu.jpg" class="card-img-top" alt="sepatu">
+          <div class="card-body">
+            <h5 class="card-title">Sepatu Anak</h5>
+            <p class="card-text">sepatu nyaman dipakai untuk si kecil.</p>
+            <p class="card-text">Rp 140.000</p>
+            <a href="#" class="btn btn-primary mt-auto">Tambahkan ke keranjang</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image/sweater.jpg" class="card-img-top" alt="sweater">
+          <div class="card-body">
+            <h5 class="card-title">sweater</h5>
+            <p class="card-text">sweater trendy dan nyaman.</p>
+            <p class="card-text">Rp 160.000</p>
+            <a href="#" class="btn btn-primary mt-auto">Tambahkan ke keranjang</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image/hoodie.jpg" class="card-img-top" alt="hoodie">
+          <div class="card-body">
+            <h5 class="card-title">Hoodie</h5>
+            <p class="card-text">Hoodie keren.</p>
+            <p class="card-text">Rp 120.000</p>
+            <a href="#" class="btn btn-primary mt-auto">Tambahkan ke keranjang</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="image/jersey futsal.jpg" class="card-img-top" alt="Jersey">
+          <div class="card-body">
+            <h5 class="card-title">Jersey Futsal Custom</h5>
+            <p class="card-text">Jersey Custom hangat dan nyaman dipakai.</p>
+            <p class="card-text">Rp 150.000</p>
+            <a href="#" class="btn btn-primary mt-auto">Tambahkan ke keranjang</a>
           </div>
         </div>
       </div>
@@ -63,7 +155,6 @@
     </div>
   </div>
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
-  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
